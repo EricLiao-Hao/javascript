@@ -201,8 +201,17 @@ table {
   background-color: #424242;
   border: 6px solid #ff1200;
 }
-.place {
-	margin-right: 60px;
+.place1 {
+	margin-right: 30px;
+	display:inline-block ;
+}
+.place2 {
+	width: 25%;
+	display:inline-block;
+}
+.place3 {
+	width: 20%;
+	display:inline-block;
 }
 .greenbar {
 	border-left: 5px solid #86d73f;

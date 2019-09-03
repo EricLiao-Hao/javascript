@@ -9,7 +9,7 @@ var bmiData = JSON.parse(localStorage.getItem('bigData')) || [];
 console.log(bmiData);
 
 update();
-// update ();
+
 function calData(e){
   e.preventDefault();
   var heiNum = hei.value;
@@ -85,7 +85,7 @@ function update(){
   var str = '';
   var len = bmiData.length;
     for (var i=0; i< len ; i++){
-      str += '<li class="'+ bmiData[i].bar +'"><span class="'+ bmiData[i].eva +'">'+ bmiData[i].status +' </span><span class="place">BMI '+ bmiData[i].res +'</span> <span class="place">height '+ bmiData[i].height +'cm</span>weight '+ bmiData[i].weight +'kg</li>'
+      str += '<li class="'+ bmiData[i].bar +'"><span class="'+ bmiData[i].eva +'">'+ bmiData[i].status +' </span><span class="place1">BMI '+ bmiData[i].res +'</span> <span class="place2">height '+ bmiData[i].height +'cm</span> <span class="place3">weight '+ bmiData[i].weight +'kg</span></li>'
       result.innerHTML = str;
     }
 }
@@ -98,12 +98,3 @@ function del(e){
 }
 btn.addEventListener('click', calData);
 clear.addEventListener('click', del);
-
-// function update(){
-//   for(var i=0 ; i<bmiData[i].length; i++){
-//   var str ='';
-//   str += '<li class="'+ status +'">8888</li>';
-//   result.innerHTML = str
-//   }
-// }
-// update();
